@@ -47,7 +47,7 @@ wheels = [
 ]
 
 [[package]]
-name = "khrapovsgithubio-source"
+name = "khrapovs-github-io"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

@@ -1,10 +1,7 @@
 [project]
-name = "khrapovsgithubio-source"
+name = "khrapovs.github.io"
 version = "0.1.0"
-description = "Add your description here"
+description = "Profile page of Stansislav Khrapov"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-    "mkdocs-landing>=0.0.6",
-    "mkdocs>=1.6.1",
-]
+dependencies = ["mkdocs-landing>=0.0.6", "mkdocs>=1.6.1"]
