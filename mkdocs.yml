@@ -1,0 +1,29 @@
+site_name: Stanislav Khrapov
+
+docs_dir: src
+site_dir: docs
+
+theme:
+  name: landing
+  favicon: favicon.ico
+  avatar: my_portrait.jpg
+  avatar_size: 12rem
+  round_avatar: True
+  toc_level: 2
+  tagline: Lead Data Scientist
+  socials:
+    - label: Email
+      link: mailto:khrapovs@gmail.com
+      icon: at
+    - label: GitHub
+      link: https://github.com/khrapovs
+      icon: [brands, github]
+    - label: LinkedIn
+      link: https://www.linkedin.com/in/khrapovs
+      icon: [brands, linkedin]
+
+repo_url: https://github.com/khrapovs/khrapovsgithubio_source
+
+markdown_extensions:
+  - toc
+
