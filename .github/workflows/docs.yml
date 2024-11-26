@@ -28,13 +28,13 @@ jobs:
     - name: Install dependencies
       run: uv sync
 
-    - name: Run test suite
+    - name: Build docs
       run: uv run mkdocs build
 
     - name: Commit
       run: |
         git add --all
-        git config --global user.email "khrapovs@googlemail.com"
+        git config --global user.email "khrapovs@gmail.com"
         git config --global user.name "Stanislav Khrapov"
         git commit --all -m "sys: Build documentation"
     
