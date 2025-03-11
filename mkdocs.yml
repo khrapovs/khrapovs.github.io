@@ -27,3 +27,6 @@ repo_url: https://github.com/khrapovs/khrapovsgithubio_source
 markdown_extensions:
   - toc
 
+plugins: 
+  - include-markdown
+
