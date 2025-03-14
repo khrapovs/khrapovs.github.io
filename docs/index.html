@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Who am I? - Stanislav Khrapov</title>
+    <style>
+      /* load heading font */
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@700');
+
+      /* load body font */
+      @import url('https://fonts.googleapis.com/css2?family=Noto Sans:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Noto Sans:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Noto Sans:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=Noto Sans:ital,wght@700');
+
+      /* load mono font */
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:ital,wght@700');
+
+      /* load emoji font */
+      @font-face {
+        font-family: "Noto Color Emoji";
+        src: url('assets/fonts/emoji/NotoColorEmoji-Regular.ttf');
+        font-weight: 400;
+      }
+  
+      :root {
+        /* colors */
+        --primary: #05b2dc;
+        --secondary: #ef9B0f;
+        --tertiary: #ef3e36;
+        /* shades */
+        --base: #ffffff;
+        --mantle: #f5f4f5;
+        --crust: #d4d2d5;
+        --overlay: #aBaBaE;
+        --footer: #000000cc;
+        /* text */
+        --text: #343233;
+        --hltext: #ffffff;
+        color: var(--text);
+        /* background-specific text */
+        --primary-text: var(--hltext);
+        --secondary-text: var(--hltext);
+        --tertiary-text: var(--hltext);
+        --base-text: var(--text);
+        --mantle-text: var(--text);
+        --crust-text: var(--text);
+        --overlay-text: var(--hltext);
+        --footer-text: var(--hltext);
+        /* fonts */
+        --heading: Poppins, Noto Color Emoji;
+        --body: Noto Sans, Noto Color Emoji;
+        --mono: JetBrains Mono, Noto Color Emoji;
+        font-family: var(--body); 
+      }
+      /* dark mode */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          /* colors */
+          --primary: #05b2dc;
+          --secondary: #ef9B0f;
+          --tertiary: #ef3e36;
+          /* shades */
+          --base: #343233;
+          --mantle: #373536;
+          --crust: #3E3C3D;
+          --overlay: #646461;
+          --footer: #00000022;
+          /* text */
+          --text: #ffffff;
+          --hltext: #343233;
+          color: var(--text);
+          /* background-specific text */
+          --primary-text: var(--text);
+          --secondary-text: var(--text);
+          --tertiary-text: var(--text);
+          --base-text: var(--text);
+          --mantle-text: var(--text);
+          --crust-text: var(--text);
+          --overlay-text: var(--hltext);
+          --footer-text: var(--text);
+        }
+      }
+      /* style settings */
+      header#header {
+        grid-template-columns: 12rem auto 12rem;
+      }
+      body#background {
+        background: fixed center/cover var(--base);
+        
+        
+      }
+      #background-gradient {
+        background: linear-gradient(
+          45deg, 
+          color-mix(in srgb, var(--mantle) 80%, transparent), transparent, color-mix(in srgb, var(--crust) 20%, transparent)
+        );
+      }
+      content#content {
+        padding: 0 3rem;
+        background: color-mix(in srgb, var(--base) 0%, transparent);
+        border-left: none;
+        border-right: none;
+      }
+      #avatar {
+        
+        border-radius: 50%;
+        
+      }
+      footer#footer a {
+        color: #ef9B0f;
+      }
+      footer#footer a:hover {
+        color: #ef3e36;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href=favicon.ico>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsivity.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b57355f8ac.js" crossorigin="anonymous"></script>
+    <script id="altmetric-embed-js" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/altmetric_badges-e7ba41a192efc3e63f5d48f8a1916dec4b1b49c01075bc7b39481408957b3b28.js"></script>
+    <link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-59614f5c46b49b21eeef3bb28c4fb38d1e7069e8d014752fcb66e84942556802.css">
+    <script>
+      function on_share() {
+        navigator.share({
+          url: document.URL,
+          title: "Who am I? -Stanislav Khrapov",
+        });
+      }
+    </script>
+</head>
+
+<body id="background">
+  <div id="background-gradient"></div>
+  <content id="content">
+  
+<a id="share-btn" onclick="on_share()">
+  <i class="fa fa-share-alt" alt="🔗"></i>
+</a>
+
+  
+  <header id="header">
+    
+    
+     
+    
+    <img id="avatar" src="my_portrait.jpg" />
+    
+
+    
+    
+    
+     
+    <p id="tagline">Lead Data Scientist</p>
+
+    
+    
+    
+     
+    <h1 id="title"><a href=.>Stanislav Khrapov</a></h1>
+
+    
+    
+    
+     
+    <ul id="socials">
+        
+        
+        
+        
+        
+        <li>
+            <a href="mailto:khrapovs@gmail.com"><i class="fa-regular fa-at" alt="Email"></i></a>
+            <div class="social-label">Email</div>
+        </li>
+        
+        
+        
+        
+        
+        <li>
+            <a href="https://github.com/khrapovs"><i class="fa-brands fa-github" alt="GitHub"></i></a>
+            <div class="social-label">GitHub</div>
+        </li>
+        
+        
+        
+        
+        
+        <li>
+            <a href="https://www.linkedin.com/in/khrapovs"><i class="fa-brands fa-linkedin" alt="LinkedIn"></i></a>
+            <div class="social-label">LinkedIn</div>
+        </li>
+        
+    </ul>
+
+    
+    
+</header>
+  
+  <main id="page">
+    <nav class="vertical" id="toc">
+
+<ul>
+
+<li class="nav-item">
+<a href="#who-am-i">Who am I?</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#research">Research</a>
+    
+    <ul>
+    
+    
+    <li class="nav-subitem">
+    <a href="#publications">Publications</a>
+    </li>
+    
+    
+    </ul>
+    
+</li>
+
+</ul>
+
+</nav>
+    <h1 id="who-am-i">Who am I?</h1>
+<p><a href="Stanislav_Khrapov_CV.pdf"><strong>Full Resume</strong></a></p>
+<p>My name is Stanislav Khrapov.
+I am a full stack Machine Learning engineer with many years of experience building data science applications starting from data ingestion, modelling, and finishing with cloud deployment and monitoring services.
+I am passionate about data, automation, code quality, visualisation, and communicating with both technical and non-technical stakeholders.</p>
+<p>Currently, I work as a lead data scientist at a small consulting company <a href="https://www.m2hycon.de/">M2hycon</a>.
+In this role I have led a cross-functional team of data scientists and data engineers designing and implementing a dynamic pricing application based on Bayesian methods.
+I have also taken over a project with a lot of legacy code and replaced an existing failure detection model that was using a neural network with a much simpler, faster, and more accurate classification algorithm.</p>
+<p>In the past I was a senior data scientist at the FinTech startup <a href="https://chintai.io/">Chintai</a> based in Frankfurt am Main, Germany.
+My main project is the development of trade surveillance system based on unsupervised time series classification machine learning models.
+In the absence of comprehensive training data we have built realistic exchange market simulation with heterogeneous traders.
+One part of it is the fast Python-based order book matching engine (<a href="https://github.com/khrapovs/OrderBookMatchingEngine">OrderBookMatchingEngine</a>).
+To tie all pieces together we have designed a fully automated and reproducible pipeline to simulate market data, train and evaluate ML models catching illegal trading behaviour.
+As in any startup I also did a little bit of everything IT-related.
+This includes building GitHub actions based CI/CD pipelines to release Node.js web applications interacting with the blockchain, check code quality, unit and integration tests, search for code vulnerabilities, deploy to Kubernetes cluster running in the cloud.
+I have also organized processes across the company to streamline and speed up development and release activities starting from a PR and finishing with deployment to the production environment.</p>
+<p>I started my career in data science at <a href="https://www.dbschenker.com/global">DB Schenker</a> also based in Frankfurt.
+There I designed new time series models for forecasting of market freight prices and volumes, company internal financial indicators (EBIT, revenue, receivables, payables, etc.).
+My responsibilities also included writing end-to-end data ingestion, processing, forecasting, and delivery software mainly in Python and using such tools as web scraping, SQL, pandas, scikit, GitLab, Docker, AWS, Azure, Airflow, etc.
+I performed research on model comparison in terms of forecasting performance.
+On top of that I love doing sophisticated visualizations (Seaborn, Dash) for presentation to internal business clients.
+Finally, I regularly worked as an instructor for the internal AI Training Workshop.</p>
+<p>Even before that, as I was working as Assistant Professor of Finance at the <a href="http://www.nes.ru/en/home/">New Economic School in Moscow, Russia</a>.
+My area of specialization was financial econometrics, option pricing, volatility modeling.
+During graduate education and work experience that includes both academic and industry positions I wrote research papers individually and in collaboration.</p>
+<p>On the personal level I run and swim a lot, bike occasionally (no triathlon, please!).
+You can join me in this passion on <a href="https://www.strava.com/athletes/6131284">Strava</a>.</p>
+<h1 id="research">Research</h1>
+<h2 id="publications">Publications</h2>
+<ul>
+<li>
+<p>Hyojin Hana, Stanislav Khrapov, Eric Renault (2020). <a href="https://doi.org/10.1016/j.jeconom.2019.12.003">The leverage effect puzzle revisited: Identification in discrete time</a>. Journal of Econometrics.</p>
+</li>
+<li>
+<p>Stanislav Anatolyev and Stanislav Khrapov (2015). <a href="http://www.mdpi.com/2225-1146/3/3/610">Right on Target, or Is it? The Role of Distributional Shape in Variance Targeting</a>. Econometrics, 3(3), pp. 610--632. (<a href="http://is.gd/vartarget">Additional materials</a>, <a href="http://ssrn.com/abstract=2653563">SSRN</a>)</p>
+</li>
+</ul>
+<p><a href="research/">Read more...</a></p>
+    <nav id="page-controls">
+      <a href="#content" id="return-top">
+        <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+      </a>
+    </nav>
+  </main>
+  </content>
+  <footer id="footer">
+    
+
+<p>Compiled from markdown using <a href="https://www.mkdocs.org/">MkDocs</a>. Theme is <a href="https://teparsons.github.io/mkdocs-landing/">Landing</a> by <a href="https://toddparsons.co.uk">Todd Parsons</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </footer>
+</body>
+
+</html>
