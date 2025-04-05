@@ -31,20 +31,6 @@ jobs:
     - name: Build docs
       run: uv run mkdocs build
 
-    - name: Commit
-      run: |
-        git add --all
-        git config --global user.email "khrapovs@gmail.com"
-        git config --global user.name "Stanislav Khrapov"
-        git commit --all -m "sys: Build documentation"
-    
-    - name: Push
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages
-        force: true
-
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
