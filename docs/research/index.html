@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Research - Stanislav Khrapov</title>
+    <style>
+      /* load heading font */
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@700');
+
+      /* load body font */
+      @import url('https://fonts.googleapis.com/css2?family=Noto Sans:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Noto Sans:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Noto Sans:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=Noto Sans:ital,wght@700');
+
+      /* load mono font */
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:ital,wght@700');
+
+      /* load emoji font */
+      @font-face {
+        font-family: "Noto Color Emoji";
+        src: url('../assets/fonts/emoji/NotoColorEmoji-Regular.ttf');
+        font-weight: 400;
+      }
+  
+      :root {
+        /* colors */
+        --primary: #05b2dc;
+        --secondary: #ef9B0f;
+        --tertiary: #ef3e36;
+        /* shades */
+        --base: #ffffff;
+        --mantle: #f5f4f5;
+        --crust: #d4d2d5;
+        --overlay: #aBaBaE;
+        --footer: #000000cc;
+        /* text */
+        --text: #343233;
+        --hltext: #ffffff;
+        color: var(--text);
+        /* background-specific text */
+        --primary-text: var(--hltext);
+        --secondary-text: var(--hltext);
+        --tertiary-text: var(--hltext);
+        --base-text: var(--text);
+        --mantle-text: var(--text);
+        --crust-text: var(--text);
+        --overlay-text: var(--hltext);
+        --footer-text: var(--hltext);
+        /* fonts */
+        --heading: Poppins, Noto Color Emoji;
+        --body: Noto Sans, Noto Color Emoji;
+        --mono: JetBrains Mono, Noto Color Emoji;
+        font-family: var(--body); 
+      }
+      /* dark mode */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          /* colors */
+          --primary: #05b2dc;
+          --secondary: #ef9B0f;
+          --tertiary: #ef3e36;
+          /* shades */
+          --base: #343233;
+          --mantle: #373536;
+          --crust: #3E3C3D;
+          --overlay: #646461;
+          --footer: #00000022;
+          /* text */
+          --text: #ffffff;
+          --hltext: #343233;
+          color: var(--text);
+          /* background-specific text */
+          --primary-text: var(--text);
+          --secondary-text: var(--text);
+          --tertiary-text: var(--text);
+          --base-text: var(--text);
+          --mantle-text: var(--text);
+          --crust-text: var(--text);
+          --overlay-text: var(--hltext);
+          --footer-text: var(--text);
+        }
+      }
+      /* style settings */
+      header#header {
+        grid-template-columns: 12rem auto 12rem;
+      }
+      body#background {
+        background: fixed center/cover var(--base);
+        
+        
+      }
+      #background-gradient {
+        background: linear-gradient(
+          45deg, 
+          color-mix(in srgb, var(--mantle) 80%, transparent), transparent, color-mix(in srgb, var(--crust) 20%, transparent)
+        );
+      }
+      content#content {
+        padding: 0 3rem;
+        background: color-mix(in srgb, var(--base) 0%, transparent);
+        border-left: none;
+        border-right: none;
+      }
+      #avatar {
+        
+        border-radius: 50%;
+        
+      }
+      footer#footer a {
+        color: #ef9B0f;
+      }
+      footer#footer a:hover {
+        color: #ef3e36;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href=favicon.ico>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/responsivity.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b57355f8ac.js" crossorigin="anonymous"></script>
+    <script id="altmetric-embed-js" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/altmetric_badges-e7ba41a192efc3e63f5d48f8a1916dec4b1b49c01075bc7b39481408957b3b28.js"></script>
+    <link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-59614f5c46b49b21eeef3bb28c4fb38d1e7069e8d014752fcb66e84942556802.css">
+    <script>
+      function on_share() {
+        navigator.share({
+          url: document.URL,
+          title: "Research -Stanislav Khrapov",
+        });
+      }
+    </script>
+</head>
+
+<body id="background">
+  <div id="background-gradient"></div>
+  <content id="content">
+  
+<a id="share-btn" onclick="on_share()">
+  <i class="fa fa-share-alt" alt="🔗"></i>
+</a>
+
+  
+  <header id="article-header">
+    <a href=.. id="return-home">
+        <i class="fa fa-arrow-left" alt="⇦"></i> Home
+    </a>
+    <h1 id="title">Research</h1>
+</header>
+  
+  <main id="page">
+    <nav class="vertical" id="toc">
+
+<ul>
+
+<li class="nav-item">
+<a href="#publications">Publications</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#working-papers">Working papers</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#work-in-progress">Work in progress</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+</ul>
+
+</nav>
+    <h2 id="publications">Publications</h2>
+<ul>
+<li>
+<p>Hyojin Hana, Stanislav Khrapov, Eric Renault (2020). <a href="https://doi.org/10.1016/j.jeconom.2019.12.003">The leverage effect puzzle revisited: Identification in discrete time</a>. Journal of Econometrics.</p>
+</li>
+<li>
+<p>Stanislav Anatolyev and Stanislav Khrapov (2015). <a href="http://www.mdpi.com/2225-1146/3/3/610">Right on Target, or Is it? The Role of Distributional Shape in Variance Targeting</a>. Econometrics, 3(3), pp. 610--632. (<a href="http://is.gd/vartarget">Additional materials</a>, <a href="http://ssrn.com/abstract=2653563">SSRN</a>)</p>
+</li>
+</ul>
+<h2 id="working-papers">Working papers</h2>
+<ul>
+<li>
+<p><a href="https://sites.google.com/site/khrapovs/Colacito-Khrapov-2016-Buy-Global.pdf">Buy Global, Sell Local. Consumption Heterogeneity, Regional Risk-sharing, and the Cross-section of Equity Returns</a> (with <a href="http://www.unc.edu/~colacitr/">Riccardo Colacito</a>) (<a href="https://ssrn.com/abstract=2853104">SSRN</a>)</p>
+</li>
+<li>
+<p><a href="https://sites.google.com/site/khrapovs/Khrapov-2014-Risk-neutral-density.pdf">Option Pricing via Risk-Neutral Density Forecasting</a></p>
+</li>
+<li>
+<p><a href="https://sites.google.com/site/khrapovs/research/Khrapov-2012-Central-Tendency.pdf">Pricing Central Tendency in Volatility</a> (<a href="http://ssrn.com/abstract=2075735">SSRN</a>)</p>
+</li>
+<li>
+<p>Do Spatial Structures Yield Better Volatility Forecasts? (with <a href="http://pages.nes.ru/sanatoly/">Stanislav Anatolyev</a>)</p>
+</li>
+<li>
+<p><a href="https://sites.google.com/site/khrapovs/research/Khrapov-2011-Risk_Premia.pdf">Risk Premia: Short and Long-term</a> (<a href="http://ssrn.com/abstract=1987644">SSRN</a>)</p>
+</li>
+<li>
+<p><a href="https://sites.google.com/site/khrapovs/Buchatskaya-Khrapov-2013-Jumps-Skewness.pdf">Realized Skewness Predicts Jump Variation</a> (with Elena Buchatskaya)</p>
+</li>
+</ul>
+<h2 id="work-in-progress">Work in progress</h2>
+<ul>
+<li>
+<p>Modeling Vast Dimensional Autoregressive Conditional Density (with <a href="http://pages.nes.ru/sanatoly/">Stanislav Anatolyev</a> and Andrey Zeleneev)</p>
+</li>
+<li>
+<p>Capital Structure and Equity Correlation Premiums (with <a href="http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1655136">Oleg Gredil</a>)</p>
+</li>
+</ul>
+    <nav id="page-controls">
+      <a href="#content" id="return-top">
+        <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+      </a>
+    </nav>
+  </main>
+  </content>
+  <footer id="footer">
+    
+
+<p>Compiled from markdown using <a href="https://www.mkdocs.org/">MkDocs</a>. Theme is <a href="https://teparsons.github.io/mkdocs-landing/">Landing</a> by <a href="https://toddparsons.co.uk">Todd Parsons</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </footer>
+</body>
+
+</html>
